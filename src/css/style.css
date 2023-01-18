@@ -10,6 +10,7 @@ html{
 
 /* vars */
 :root {
+    --body-border-color : 214,195,195;
     --main-bg-color : 138,21,56;
     --main-color:255,255,255;
     --border-color:161,16,59;
@@ -53,4 +54,73 @@ html{
 .navbar .link:hover, navbar .link.active {
     background-color: rgb(var(--main-color)) ;
     color: rgb(var(--main-bg-color));
+}
+/* tabs */
+.tabs{
+    display: flex;
+    justify-content: center;
+}
+.tab{
+    width:100%;
+    max-width: 1000px;
+}
+.matches{
+    margin:0.5rem;
+}
+.matches .stage{
+    margin: 1rem 0;
+}
+.matches .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.matches .container .match-container{
+    border:1px solid rgb(var(--body-border-color));
+    border-radius: 10px;
+    max-width: 400px;
+    padding:0.5rem;
+    margin:0.5rem;
+    flex:50%;
+}
+.matches .container .match-container:hover {
+    background-color: rgb(var(--main-bg-color)) ;
+    color: rgb(var(--main-color));
+}
+.matches .container .match-container .match{
+    justify-content: space-around;
+    display:flex;
+    margin-top: 0.5rem;
+    align-items: center;
+}
+.match .teams{
+    width:60%;
+}
+.match .team{
+    justify-content: space-around;
+    margin: 0.5rem 0;
+    display: flex;
+}
+.match .team .info {
+    display: flex;
+}
+.match .team .info img {
+    border:1px solid rgb(var(--body-border-color));
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    width:28px;
+    height:28px;
+}
+.match .match-state{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:40%;
+    border-left:1px solid rgb(var(--body-border-color));
+
+}
+
+/*hide*/
+.hide{
+    display:none;
 }
